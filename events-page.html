@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumânări pentru Evenimente - Magic Honey Candles</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-nav-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Logo Magic Honey Candles" class="logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="despre-noi.html">Despre Noi</a></li>
+                    <li><a href="products.html">Magazin</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Lumânări pentru Evenimente</h1>
+        <div class="row">
+            <!-- Exemplu pentru primul produs -->
+            <div class="col-md-4 product-item text-center">
+                <img src="images/lumanare1.png" alt="Produs 1" class="product-image" onclick="toggleDescription('description1')">
+                <h4>Produs 1</h4>
+                <div id="description1" class="product-description hidden">
+                    <p>Descriere detaliată a produsului 1.</p>
+                </div>
+                <p>250.00 lei</p>
+                <button class="btn btn-primary">Adaugă în Coș</button>
+            </div>
+            <!-- Adaugă mai multe produse replicând structura de mai sus -->
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div class="footer-about">
+                <h3>Magic Honey Candles</h3>
+                <p>Descoperă colecția noastră exclusivă de lumânări parfumate din ceară naturală de albine. Fiecare produs este creat cu pasiune și atenție pentru detalii.</p>
+            </div>
+            <div class="footer-contact">
+                <p><strong>Telefon:</strong> 0722 555 555</p>
+                <p><strong>Email:</strong> contact@magialumanarilor.ro</p>
+                <p><strong>Adresă:</strong> Strada Principala, Nr. 5, București</p>
+                <p><strong>Program de lucru:</strong> Luni - Vineri 9:00 - 18:00</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Magic Honey Candles. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

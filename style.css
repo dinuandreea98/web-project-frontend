@@ -1,0 +1,269 @@
+/* Stiluri generale */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background: #f5e5c0; /* Un fundal neutru care funcționează bine pentru ambele pagini */
+    color: #DAA520; /* Culoarea mierii */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff; /* Fond alb */
+    padding: 10px 20px;
+    border-bottom: 2px solid #DAA520; /* Linia sub antet */
+}
+
+.logo-nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img.logo {
+    height: 100px; /* Logo mai mic */
+    width: auto; /* Menținere proporții */
+    margin-right: 25px; /* Spațiu între logo și navigație */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #cf7e05; /* Culoare text */
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.cart-icon-container img {
+    height: 40px; /* Dimensiune coș de cumpărături */
+}
+
+/* Secțiunea Hero pentru index.html */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6d2b5; /* Culoare de fundal pentru secțiunea Hero */
+    padding: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 500px; /* Limitează înălțimea imaginii pentru a se potrivi mai bine */
+    border-radius: 8px;
+}
+
+.hero button {
+    position: absolute;
+    bottom: 20px;
+    background-color: #E4A13C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero button:hover {
+    background-color: #e59a07;
+    transform: scale(1.05);
+}
+
+/* Secțiunea de descriere (description) */
+.description {
+    padding: 20px;
+    background-color: #f7f7f7; /* O nuanță neutră pentru fondul secțiunii */
+    color: #cf7e05; /* Text mai închis pentru lizibilitate */
+    text-align: center; /* Centrarea textului */
+    font-size: 18px; /* Mărime adecvată pentru descriere */
+    margin: 20px 0; /* Spațiu înainte și după secțiune */
+}
+
+/* Secțiuni de produse */
+.product-section, .category {
+    background-color: #fff; /* Fundal alb pentru fiecare categorie sau secțiune */
+    color: #DAA520; /* Text culoare miere */
+    padding: 40px 20px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adaugă o umbră discretă */
+}
+
+.category h2, .product-section h2 {
+    color: #DAA520; /* Text culoare miere */
+    margin-bottom: 15px;
+}
+
+.product-item {
+    margin: 20px 0;
+}
+
+.product-item img, .category-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 300px; /* Limitează înălțimea imaginii pentru consistență */
+    border-radius: 8px;
+}
+
+.product-item h4, .category-description {
+    margin: 15px 0;
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #cf7e05; /* Culoarea butonului */
+    color: white; /* Culoarea textului */
+    border: none; /* Fără bordură */
+    padding: 10px 20px; /* Padding pentru confort */
+    font-size: 18px; /* Mărimea textului */
+    border-radius: 5px; /* Margini rotunjite */
+    text-decoration: none; /* Fără subliniere a textului */
+    display: inline-block; /* Asigură că linkul se comportă ca un buton */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e59a07; /* Schimbarea culorii la hover */
+    transform: scale(1.05); /* Mărire ușoară la hover */
+}
+
+/* Secțiunea Testimoniale */
+.testimonials {
+    background-color: #f7f7f7; /* Un fundal discret */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonials .carousel-item {
+    position: relative;
+    height: 700px; /* Ajustare înălțime după necesități */
+}
+
+.testimonial-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Acoperă întreaga zonă a elementului carousel */
+    z-index: 1;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Asigură că textul este deasupra */
+    background: rgba(0, 0, 0, 0.5); /* Fundal semi-transparent pentru lizibilitate */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%; /* Ajustare lățime după necesități */
+    text-align: center;
+}
+
+/* Secțiunea de abonare */
+#subscribe {
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url('images/imagine.png'); /* Imagine de fundal */
+    background-size: cover;
+    background-position: center;
+    margin: 20px 0;
+}
+
+.subscribe-content {
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: auto;
+    max-width: 500px;
+}
+
+#subscribe-form input[type="email"],
+#subscribe-form button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+#subscribe-form button {
+    background-color: #E4A13C;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#subscribe-form button:hover {
+    background-color: #e59a07;
+}
+
+/* Stiluri pentru Footer */
+.site-footer {
+    background-color: #d2a679; /* Culoare de fundal pentru footer */
+    color: #fff; /* Text alb pentru contrast */
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.footer-about,
+.footer-contact,
+.footer-social {
+    flex: 1;
+}
+
+.footer-about h3,
+.footer-contact strong {
+    color: #f6e6b4; /* Culoare deschisă pentru titluri */
+}
+
+.footer-about p,
+.footer-contact p {
+    margin: 10px 0;
+}
+
+.footer-social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #f6e6b4; /* Highlight la hover */
+}
+
+.footer-bottom {
+    color: #f6e6b4;
+    border-top: 1px solid #e6d5c3; /* Linie subtilă pentru delimitare footer */
+    padding-top: 10px;
+}
